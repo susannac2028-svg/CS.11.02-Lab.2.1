@@ -56,7 +56,7 @@ public class Main {
         return three + three + three;
     }
 
-    // 6. half
+    // 6. half of integer
     static int half(int numberhalf){
         return numberhalf / 2;
     }
