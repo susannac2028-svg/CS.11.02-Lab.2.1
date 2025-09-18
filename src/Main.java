@@ -12,7 +12,7 @@ public class Main {
         int addtwo = add(4, 5);
         System.out.println(addtwo);
 
-        int addfour = add(3, 4, 5, 6);
+        int addfour = addtwo(3, 4, 5, 6);
         System.out.println(addfour);
 
         String mGreeting = morningGreeting("Toby Fox");
@@ -21,16 +21,16 @@ public class Main {
         String aGreeting = afternoonGreeting("Toby Fox");
         System.out.println(aGreeting);
 
-        String triplestring = triple("Hello");
+        String triplestring = triple("oohbaby");
         System.out.println(triplestring);
 
-        int halfnumb = half(6);
+        double halfnumb = half(7);
         System.out.println(halfnumb);
 
-        int roundPositive = positive(6.6);
+        int roundPositive = roundPositiveValueToNearestInteger(6.6);
         System.out.println(roundPositive);
 
-        int roundNegative = negative(-4.5);
+        int roundNegative = roundNegativeValueToNearestInteger(-4.5);
         System.out.println(roundNegative);
     }
 
@@ -39,34 +39,34 @@ public class Main {
         return a+b;
     }
     // 2. add
-    static int add(int a, int b, int c, int d){
+    static int addtwo(int a, int b, int c, int d){
         return a+b+c+d;
     }
     // 3. morningGreeting
     static String morningGreeting(String name){
-        return "Good morning " + name + "!";
+        return "早上好, " + name + "!";
     }
 
     // 4. afternoonGreeting
     static String afternoonGreeting(String name){
-        return "Good afternoon " + name + "!";
+        return "下午好, " + name + "!";
     }
     // 5. triple
     static String triple(String three){
         return three + three + three;
     }
 
-    // 6. half of integer
-    static int half(int numberhalf){
-        return numberhalf / 2;
+    // 6. half
+    static double half(int numberhalf){
+        return (double) numberhalf / 2;
     }
 
     // 7. roundPositiveValueToNearestInteger
-    static double positive(double posround){
-        return posround + 0.5;
+    static int roundPositiveValueToNearestInteger(double posround){
+        return (int)(posround + 0.5);
     }
     // 8. roundNegativeValueToNearestInteger
-    static double negative(double neground){
-        return neground -0.5;
+    static int roundNegativeValueToNearestInteger(double neground){
+        return (int)(neground -0.5);
     }
 }

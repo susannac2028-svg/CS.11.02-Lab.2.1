@@ -3,17 +3,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @org.junit.jupiter.api.Test
-    void main() {
-    }
-
-    @org.junit.jupiter.api.Test
     void add() {
         assertEquals(12, Main.add(5,7));
     }
 
+
     @org.junit.jupiter.api.Test
     void addTwo() {
-        assertEquals(24, Main.add(5,7,6,6));
+        assertEquals(24, Main.addtwo(5,7,6,6));
     }
 
     @org.junit.jupiter.api.Test
